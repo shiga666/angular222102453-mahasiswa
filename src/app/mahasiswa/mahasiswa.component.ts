@@ -116,7 +116,7 @@ export class MahasiswaComponent implements AfterViewInit{
   
     var url = "https://stmikpontianak.cloud/011100862/tambahMahasiswa.php" +
       "?alamat=" + alamat +
-      "&jeniskelamin=" + jeniskelamin +
+      "&jenisKelamin=" + jeniskelamin +
       "&jp=" + jp +
       "&nama=" + nama +
       "&nim=" + nim +
