@@ -25,6 +25,7 @@ export class ForexComponent implements AfterViewInit{
     this.renderer.addClass(document.body, "sidebar-collapsed");
 
     this.private_table1 = $("#table1").DataTable({
+<<<<<<< HEAD
       "columnDefs": [
         {
           "targets": 2, // Nama Mata Uang
@@ -33,6 +34,12 @@ export class ForexComponent implements AfterViewInit{
         {
           "targets": 3, // Kurs
           "className": "text-right"
+=======
+      "columnDefs" : [
+        {
+          "targets" : 2,
+          "className" : "text-left"
+>>>>>>> bfced9c1a1d971431b55977b9c92eef8d742e409
         }
       ]
     });
