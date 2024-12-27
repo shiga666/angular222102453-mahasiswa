@@ -13,7 +13,7 @@
         <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Alexander Pierce</a>
+        <a href="#" class="d-block">{{ username }}</a>
       </div>
     </div>
 
@@ -126,13 +126,13 @@
                   <p>Fixed Footer</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
-                </a>
-              </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/forex']" routerLinkActive="router-link-active" class="nav-link {{ moduleName == 'forex' ? 'active' : ''}}" (click)="closeSidebar()">
+              <i class="far fa-money-bill-alt nav-icon"></i>
+              <p>Forex</p>
+            </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
