@@ -27,8 +27,8 @@ export class ForexComponent implements AfterViewInit{
     this.private_table1 = $("#table1").DataTable({
       "columnDefs" : [
         {
-          "targets" : 2,
-          "className" : "text-left"
+          "targets" : 3,
+          "className" : "text-right"
         }
       ]
     });
