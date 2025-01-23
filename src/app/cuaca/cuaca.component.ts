@@ -71,7 +71,7 @@ export class CuacaComponent implements AfterViewInit {
   }
 
   getData(city: string): void {
-    const apiKey = "68366bfa9cc8e29a19f9305151fe5b51"; // Pastikan menggunakan API key yang valid
+    const apiKey = "c066400094976a3781669abd1338c074"; // Pastikan menggunakan API key yang valid
 
     // Memanggil API cuaca berdasarkan nama kota
     this.http
