@@ -75,7 +75,7 @@ export class CuacaComponent implements AfterViewInit {
 
     // Memanggil API cuaca berdasarkan nama kota
     this.http
-      .get(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`)
+      .get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`)
       .subscribe(
         (data: any) => {
           let list = data.list;
