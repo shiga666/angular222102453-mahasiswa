@@ -74,9 +74,11 @@ export class CuacaComponent implements AfterViewInit {
     const apiKey = "68366bfa9cc8e29a19f9305151fe5b51"; // Pastikan menggunakan API key yang valid
     const cityId = 1630789; // Jika menggunakan ID kota Jakarta, gunakan ID ini
 
+
+
     // Memanggil API cuaca berdasarkan nama kota
     this.http
-      .get(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`)
+      .get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`)
       .subscribe(
         (data: any) => {
           let list = data.list;
